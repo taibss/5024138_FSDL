@@ -3,54 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MARATHON 2026</title>
+    <title>MARATHON 2026 Registration</title>
 </head>
 <body>
-    <H1>
-        <marquee>📢 REGISTER NOW! JOIN THE MARATHON & BE A PART OF THE FITNESS REVOLUTION! 💪
-        </marquee>
-</H1>
-<H3 STYLE="TEXT-ALIGN:CENTER"> PLEASE FILL OUT THE DETAILS BELOW:</H3>
-<FORM ACTION="submit.php" method="post"
-STYLE="WIDTH:300PX; MARGIN:AUTO; PADDING:20PX; BORDER:2PX SOLID BLACK; TEXT-ALIGN:CENTER;">
-    <LABEL FOR="FNAME">FIRST NAME:</LABEL><BR>
-        <INPUT TYPE="TEXT" ID="FNAME" NAME="FNAME"><BR>
-    <LABEL FOR="LNAME">LAST NAME: </LABEL><BR>
-        <INPUT TYPE="TEXT" ID="LNAME" NAME="LNAME"><BR>
-    <LABEL FOR="AGE">AGE:</LABEL><BR>
-        <INPUT TYPE="NUMBER" ID="AGE" NAME="AGE"><BR>
-    <LABEL>GENDER:</LABEL><BR>
-    <LABEL FOR="MALE"> MALE</LABEL>
-        <INPUT TYPE="RADIO" ID="MALE" NAME="MALE">
-    <LABEL FOR="FEMALE">FEMALE</LABEL>
-    <INPUT TYPE="RADIO" ID="FEMALE" NAME="FEMALE">
-    <LABEL FOR="OTHERS">OTHERS</LABEL>
-    <INPUT TYPE="RADIO" ID="OTHERS" NAME="OTHERS"><BR>
-    <LABEL FOR="EMAIL">EMAIL ID:</LABEL><BR>
-    <INPUT TYPE="TEXT" ID="EMAIL" NAME="EMAIL"><BR>
-    <LABEL FOR="PHONE">PHONE NUMBER:</LABEL><BR>
-<INPUT TYPE="TEL" ID="PHONE" NAME="PHONE"><BR>
-<LABEL FOR="CITY">CITY:</LABEL><BR>
-<INPUT TYPE="TEXT" ID="CITY" NAME="CITY"><BR>
-<LABEL FOR="CATEGORY">CATEGORY:</LABEL><BR>
-    <SELECT ID="CATEGORY" NAME="CATEGORY">
-        <BR>
-            <OPTION VALUE="5K">5K:</OPTION>
-            <OPTION VALUE="10K">10K:</OPTION>
-            <OPTION VALUE="21K"> HALF MARATHON(21 K):</OPTION>
-            <OPTION VALUE="42K"> FULL MARATHON (42 K)</OPTION>
-            </SELECT><BR>
-<LABEL FOR="TSHIRT">T-SHIRT SIZE:</LABEL><BR>
 
-<SELECT ID="TSHIRT" NAME="TSHIRT"><BR>
-    <OPTION VALUE="S">S</OPTION>
-    <OPTION VALUE="M">M</OPTION>
-    <OPTION VALUE="L">L</OPTION>
-    <OPTION VALUE="XL">XL</OPTION>
-</SELECT><BR>
-<LABEL FOR="EMERGENCY">EMERGENCY CONTACT NUMBER:</LABEL><BR>
-<INPUT TYPE="TEL" ID="EMERGENCY" NAME="EMERGENCY"><BR>
-<INPUT TYPE="SUBMIT" VALUE ="REGISTER"><BR>
-</FORM>
+    <h1 align="center">
+        <marquee>📢 REGISTER NOW! JOIN THE MARATHON & BE A PART OF THE FITNESS REVOLUTION! 💪</marquee>
+    </h1>
+
+    <h3 align="center">PLEASE FILL OUT THE DETAILS BELOW:</h3>
+
+    <form action="submit.php" method="post">
+
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter first name" required><br><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter last name" required><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="10" max="100" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="others" name="gender" value="Others">
+            <label for="others">Others</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Contact Details</b></legend>
+
+            <label for="email">Email ID:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="10-digit number" pattern="[0-9]{10}" required><br><br>
+
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Marathon Details</b></legend>
+
+            <label for="category">Category:</label><br>
+            <select id="category" name="category" required>
+                <option value="">--Select Category--</option>
+                <option value="5K">5K</option>
+                <option value="10K">10K</option>
+                <option value="21K">Half Marathon (21K)</option>
+                <option value="42K">Full Marathon (42K)</option>
+            </select><br><br>
+
+            <label for="tshirt">T-Shirt Size:</label><br>
+            <select id="tshirt" name="tshirt" required>
+                <option value="">--Select Size--</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Emergency Contact</b></legend>
+
+            <label for="emergency">Emergency Contact Number:</label><br>
+            <input type="tel" id="emergency" name="emergency" pattern="[0-9]{10}" required><br><br>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="REGISTER">
+        <input type="reset" value="CLEAR FORM">
+
+    </form>
+
 </body>
 </html>
+

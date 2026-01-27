@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MARATHON 2026 Registration 2</title>
+
+    <!-- LINK TO EXTERNAL CSS -->
+    <link rel="stylesheet" href="form-style.css">
+</head>
+
+<body>
+
+    <marquee>📢 REGISTER NOW! JOIN THE MARATHON & BE A PART OF THE FITNESS REVOLUTION! 💪</marquee>
+
+    <h3>PLEASE FILL OUT THE DETAILS BELOW:</h3>
+
+    <form id="mainForm" action="submit.php" method="post" enctype="multipart/form-data">
+
+        <fieldset class="section">
+            <legend><b>Personal Information</b></legend>
+
+            <input type="text" placeholder="First Name" class="inputBox" required>
+            <input type="text" placeholder="Last Name" class="inputBox" required>
+            <input type="number" placeholder="Age" class="inputBox" required>
+
+            Gender:
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Others
+        </fieldset>
+
+        <fieldset class="section">
+            <legend><b>Contact Details</b></legend>
+
+            <input type="email" placeholder="Email ID" class="inputBox" required>
+            <input type="tel" placeholder="Phone Number" class="inputBox" required>
+            <input type="text" placeholder="City" class="inputBox" required>
+        </fieldset>
+
+        <fieldset class="section">
+            <legend><b>Marathon Details</b></legend>
+
+            <select class="inputBox" required>
+                <option value="">Select Category</option>
+                <option>5K</option>
+                <option>10K</option>
+                <option>Half Marathon (21K)</option>
+                <option>Full Marathon (42K)</option>
+            </select>
+
+            <select class="inputBox" required>
+                <option value="">T-Shirt Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+        </fieldset>
+
+        <label for="photo">Upload Your Photo:</label><br>
+        <small class="note">NOTE: The photo uploaded should be in .jpg and less than 1 MB</small><br>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+        <fieldset class="section">
+            <legend><b>Emergency Contact</b></legend>
+            <input type="tel" placeholder="Emergency Contact Number" class="inputBox" required>
+        </fieldset>
+
+        <input type="submit" value="REGISTER" class="submitBtn"><br>
+        <input type="reset" value="CLEAR FORM" class="resetBtn">
+
+    </form>
+
+</body>
+</html>

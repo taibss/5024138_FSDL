@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IT TIMETABLE</title>
+
+<style>
+    /* ELEMENT SELECTORS */
+    body {
+        font-family: Arial;
+        background-color: #f4f6f8;
+    }
+
+    h1 {
+        text-align: center;
+        background: #1d3557;
+        color: white;
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    /* CLASS SELECTORS */
+    .college { background: #2a9d8f; color: white; }
+    .dept { background: #264653; color: white; }
+    .teacher { background: #426a8a; color: white; }
+    .days { background: #e9c46a; }
+    .lab { background: #cdb4db; }
+    .lecture { background: #bde0fe; }
+    .longBreak { background: #fb8500; font-weight: bold; }
+</style>
+
+</head>
+
+<body>
+
+<h1>TIMETABLE 2026</h1>
+
+<table border="1">
+
+<tr>
+<th colspan="6" class="college">FR. C RODRGUES INSTITUTE OF TECHNOLOGY</th>
+</tr>
+
+<tr>
+<th colspan="6" class="dept">INFORMATION TECHNOLOGY FH 2026</th>
+</tr>
+
+<tr>
+<th colspan="6" class="teacher">CLASS TEACHER: PROF. SUPRIYA JOSHI</th>
+</tr>
+
+<tr class="days">
+<th>TIME</th>
+<th>MONDAY</th>
+<th>TUESDAY</th>
+<th>WEDNESDAY</th>
+<th>THURSDAY</th>
+<th>FRIDAY</th>
+</tr>
+
+<tr>
+<td>8:45 AM-9:45 AM</td>
+<td rowspan="2" class="lab">LINUX LABORATORY</td>
+<td rowspan="2" class="lab">FSD LABORATORY</td>
+<td rowspan="2" class="lab">NETWORK LABORATORY</td>
+<td class="lecture">OPERATING SYSTEM</td>
+<td class="lecture">SOFTWARE ENGINEERING</td>
+</tr>
+
+<tr>
+<td>9:45 AM-10:45 AM</td>
+<td class="lecture">ENVIRONMENTAL STUDIES</td>
+<td class="lecture">COMPUTER NETWORK</td>
+</tr>
+
+<tr>
+<td>10:45 AM-11:00 AM</td>
+<td colspan="5" class="longBreak">SHORT BREAK</td>
+</tr>
+
+<tr>
+<td>11:00 AM - 12:00 PM</td>
+<td rowspan="2" class="lab">FULL STACK DEVELOPMENT</td>
+<td class="lecture">MATHS</td>
+<td class="lecture">OPERATING SYSTEM</td>
+<td class="lecture">COMPUTER NETWORK</td>
+<td class="lecture">SOFTWARE ENGINEERING</td>
+</tr>
+
+<tr>
+<td>12:00 PM - 1:00 PM</td>
+<td class="lecture">OPERATING SYSTEM</td>
+<td class="lecture">ENVIRONMENTAL STUDIES</td>
+<td class="lecture">ENVIRONMENTAL STUDIES</td>
+<td class="lecture">MATHS</td>
+</tr>
+
+<tr>
+<td>1:00 PM-1:30 PM</td>
+<td colspan="5" class="longBreak">LONG BREAK</td>
+</tr>
+
+<tr>
+<td>1:30 PM-2:30 PM</td>
+<td rowspan="3" class="lab" style="font-weight:bold;">MINI PROJECT</td> <!-- INLINE CSS EXAMPLE -->
+<td class="lecture">MATHS</td>
+<td class="lecture">ENVIRONMENTAL STUDIES</td>
+<td class="lecture">OPERATING SYSTEM</td>
+<td class="lecture">COMPUTER NETWORK</td>
+</tr>
+
+<tr>
+<td>2:30 PM - 3:30 PM</td>
+<td class="lecture">OPERATING SYSTEM</td>
+<td class="lecture">COMPUTER NETWORK</td>
+<td class="lecture">MATHS</td>
+<td class="lecture">MATHS</td>
+</tr>
+
+<tr>
+<td>3:30 PM - 4:30 PM</td>
+<td class="lecture">MATHS</td>
+<td class="lecture">SOFTWARE ENGINEERING</td>
+<td class="lecture">ENVIRONMENTAL STUDIES</td>
+<td class="lab">FULL STACK DEVELOPMENT</td>
+</tr>
+
+</table>
+</body>
+</html>

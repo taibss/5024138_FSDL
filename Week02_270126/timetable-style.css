@@ -1,0 +1,28 @@
+/* Element Selectors */
+body {
+    font-family: Arial;
+    background-color: #f4f6f8;
+}
+
+h1 {
+    text-align: center;
+    background: #1d3557;
+    color: white;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Class Selectors */
+.college { background: #2a9d8f; color: white; }
+.dept { background: #264653; color: white; }
+.teacher { background: #426a8a; color: white; }
+.days { background: #e9c46a; }
+.lab { background: #cdb4db; }
+.lecture { background: #bde0fe; }
+.shortBreak { background: #ffb703; font-weight: bold; }
+.longBreak { background: #fb8500; font-weight: bold; }
